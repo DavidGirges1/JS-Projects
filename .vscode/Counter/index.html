@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="max-w-7xl mx-auto min-h-screen flex flex-col items-center gap-8"
+    >
+      <h1 class="text-3xl font-bold">Counter App</h1>
+      <p id="counter" class="w-40 text-center py-2 bg-gray-300 text-2xl">0</p>
+      <div class="flex items-center justify-center gap-3">
+        <button id="inc" class="w-24 py-1 bg-blue-300 text-center">INC</button>
+        <button id="dec" class="w-24 py-1 bg-red-300 text-center">DEC</button>
+        <button id="reset" class="w-24 py-1 bg-green-300 text-center">
+          RESET
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
