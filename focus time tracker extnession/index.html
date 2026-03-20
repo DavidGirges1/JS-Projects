@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      id="main-container"
+      class="bg-[#AF4949] w-screen h-screen transition-colors duration-700 eas-in-out"
+    >
+      <nav
+        class="max-w-4xl mx-auto flex justify-around items-center text-white py-3"
+      >
+        <a class="font-bold text-xl" href="#">✓ OmniFocus</a>
+
+        <div id="nav-buttons" class="flex gap-3 text-sm">
+          <button class="bg-white/10 border-blur-sm border-white/10 px-3 py-1">
+            Report
+          </button>
+          <button class="bg-white/10 border-blur-sm border-white/10 px-3 py-1">
+            Setting
+          </button>
+          <button class="bg-white/10 border-blur-sm border-white/10 px-3 py-1">
+            Sign In
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="timer-container"
+        class="w-[440px] bg-white/10 max-w-6xl mx-auto mt-10 text-white flex flex-col rounded-md"
+      >
+        <div class="max-w-3xl mx-auto pt-5 flex gap-1">
+          <button id="pomodoroButton" onclick="activatePomodoro()" class="px-2">
+            Pomodoro
+          </button>
+          <button
+            id="shortBreakButton"
+            onclick="activateShortBreak()"
+            class="px-2"
+          >
+            Short Break
+          </button>
+          <button
+            id="longBreakButton"
+            onclick="activateLongBreak()"
+            class="px-2"
+          >
+            Long Break
+          </button>
+        </div>
+
+        <p id="timer" class="text-center mt-6 text-8xl font-bold tracking-wide">
+          50:00
+        </p>
+
+        <button
+          id="actionButton"
+          class="mt-7 px-15 pt-2 pb-4 bg-white w-fit font-bold tracking-wide mx-auto text-xl mb-8 rounded"
+        >
+          START
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center justify-center mt-3 text-white">
+        <p class="font-light">#1</p>
+        <p>Time to</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
